@@ -3,8 +3,10 @@
 html{
     box-sizing: border-box;
 }
+
 html *{
     position: relative;
+    color:#064e3b;
 }
 
 *,*::before, *::after{
@@ -16,9 +18,8 @@ body * {
     display: flex;
 }
 
-/*Barra de navegacion*/
 
-/* border radius */
+/*Barra de menu*/
 *, *::before, *::after {
     box-sizing: border-box;
     margin: 0;
@@ -30,6 +31,8 @@ body {
 .nav {
     position: relative;
     box-shadow: 0 0 10px #e1e5ee;
+    justify-content: space-evenly;
+    background: #34d399;
 }
 .nav__list {
     display: flex;
@@ -48,7 +51,7 @@ body {
     transition: fill 250ms ease-in;
 }
 .nav__listlogo img:hover, .nav__listlogo img:focus {
-    fill: #256d22;
+    fill: #047857;
 }
 .nav__listitem {
     list-style: none;
@@ -71,19 +74,31 @@ body {
 .nav__listitem:hover::after, .nav__listitem:focus::after {
     width: 80%;
 }
-.nav__listitem:hover ul, .nav__listitem:focus ul {
+.nav__listitem:hover>ul, .nav__listitem:focus>ul, .nav__listitem:hover li, .nav__listitem:focus li {
     opacity: 1;
     visibility: visible;
+    height: auto;
+    width: 12rem;
+    transition: opacity 200ms ease-in;
+   
+}
+.nav__listitem:hover>ul.ninos, .nav__listitem:focus>ul.ninos, .nav__listitem:hover>ul.ninos li, .nav__listitem:focus>ul.ninos li {
+    opacity: 1;
+    visibility: visible;
+    height: auto;
+    width: auto;
+    transition: opacity 200ms ease-in;
+   
 }
 .nav__listitemdrop {
     position: absolute;
     top: 4rem;
-    left: -1rem;
-    box-shadow: 0 0 10px #e1e5ee;
-    background-color: white;
+    left: 0rem;
+    box-shadow: 0 0 0.5rem #000000;
+    background-color: #34d399;
     border-radius: 0.2rem;
-    width: 11rem;
-    padding: 0.5rem;
+    width: auto;
+    height: 0;
     display: flex;
     flex-direction: column;
     gap: 0.5rem;
@@ -95,47 +110,81 @@ body {
 .nav__listitemdrop li {
     font-size: 1vw;
     list-style: none;
-    padding: 0.2rem 0.2rem;
+    padding: 0.5rem 0.5rem;
     border-radius: 0.2rem;
     transition: background-color 200ms ease-in-out;
+    height: 0;
+    width: 0rem;
+    border: 2px;
+    border-color: white;
 }
 .nav__listitemdrop li:hover, .nav__listitemdrop li:focus {
-    background-color: #fce4ec;
+    background-color: #047857;
 }
-
+.nav__listitemdroplist:hover>ul, .nav__listitemdroplist:focus>ul, .nav__listitemdroplist:hover li, .nav__listitemdroplist:focus li {
+    opacity: 1;
+    visibility: visible;
+    height: auto;
+    width: auto;
+    transition: opacity 200ms ease-in-out;
+}
 .nav__listitemdroplistsub {
     position: absolute;
-    top: -1rem;
-    left: 10rem;
-    box-shadow: 0 0 10px #e1e5ee;
-    background-color: white;
+    top: 0rem;
+    left: 5.2rem;
+    box-shadow: 0 0 0.5rem #000000;
+    background-color: rgb(102, 255, 135);
     border-radius: 0.2rem;
-    width: 12rem;
-    padding: 1rem;
+    height: 0;
+    width: 0rem;
     display: flex;
     flex-direction: column;
     gap: 0.5rem;
     opacity: 0;
     visibility: hidden;
     transition: opacity 200ms ease-in-out;
+    
 }
 .nav__listitemdroplistsub li {
     list-style: none;
     padding: 0.5rem 1rem;
     border-radius: 0.2rem;
     transition: background-color 200ms ease-in-out;
+    height: 0;
+    width: 0rem;
 }
 .nav__listitemdroplistsub li:hover, .nav__listitemdroplistsub li:focus {
-    background-color: #fce4ec;
+    background-color: #047857;
+}
+.menu-link {
+    display: block;
+    padding: 1rem;
+    font-size: 1.2em;
+    text-decoration: none;
+    background-color: #34d399;
+    flex-grow: 1;
+    border-radius: 0.2rem;
+}
+.menu-link:hover {
+    background-color: #047857;
+    color:white;
 }
 
-.nav__listitemdroplistsub li:hover, .nav__listitemdroplistsub li:focus {
-    background-color: #fce4ec;
+.menu-link:hover::before, .menu-link:hover::after {
+    background-color: #047857;
 }
 
+/*Barra de navegacion*/
+form{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+/* 
+#buscador {
 
+} */
 
-/*Barra de busqueda*/
 .boton-busqueda {
     background: transparent;
     border: none;
@@ -147,61 +196,7 @@ body {
     height: 20px;
     object-fit: cover;
 }
-/*Barra de menu*/
 
-.menu-ropa{
-    line-height: 4rem;
-}
-.menu-ropa ul{
-    line-height: 2rem;
-}
-
-.menu-desplegable{
-    height: 0;
-    overflow: hidden;
-    transition: all 0.3s;
-    
-}
-.container-submenu:hover .menu-desplegable{
-
-    overflow: visible;
-}
-
-.container-submenu{
-    position: relative;
-
-    
-}
-.container-sub-menu:hover .sub-menu{
-
-    overflow: visible;
-}
-
-.sub-menu{
-    height: 0;
-    overflow: hidden;
-    transition: all 0.3s;
-/*    margin-left:-60px;*/
-}
-.menu-link {
-    display: block;
-    padding: 10px;
-    font-size: 1.2em;
-    text-decoration: none;  
-    color: white;
-    background-color: #34d399;
-    border-top: 2px solid #d1fae5;
-    flex-grow: 1;
-}
-
-.menu-link:hover{
-    background-color: rgb(6, 78, 59, 0.8);
-}
-.sub-menu-center{
-    display: flex;
-    text-align: center;
-/*    margin-left: -115px;*/
-}
 
 /*Animacion de linea*/
 .animated-line{
@@ -210,7 +205,7 @@ body {
     background-size: 0% 3px;
     background-position: center bottom;
     padding-block: 1.28rem;
-    transition: background-size 300ms ease-in-out;
+    transition: background-size 200ms ease-in-out;
 }
 
 .animated-line:hover{
@@ -218,6 +213,7 @@ body {
 }
 
 /*Modal*/
+
 .modal{
     width:100vw;
     height:100vh; 
@@ -226,14 +222,28 @@ body {
     top:0;
     left:0;
     background: rgba(0,0,0,0.5);
-    transition: all 500ms ease;
-    display: none;
+    /*opacity:0;
+    pointer-events: none;*/
+    transition: opacity .6s;
+    z-index: 10;
+}
+
+/* [open]{
+    opacity: 0;
+    pointer-events: unset;
+    transition: opacity 600ms ease-in-out;
+} */
+
+.modal__close:hover{
+    background-color: #047857;
+    border-radius: 8px;
+    padding: 2px;
 }
 
 .modal__contenedor{
     width: 90%;
     max-width: 600px;
-    height: 300px;
+    height: auto;
     max-height: 90%;
     margin: auto;
     background-color: #a7f3d0;
@@ -241,29 +251,44 @@ body {
     transition: all 500ms ease;
     position: relative;
     transform: translateY(-30%);
-    border-radius: 10px;
+    border-radius: 0.5rem;
+    display: flex;
+    gap: 1rem;
+    flex-direction: column;
+    padding-bottom: 1rem;
 }
 
 .modal__contenedor header {
-    padding: 10px;
+    max-width: 600px;
     background-color: #34d399;
     color:#fff;
     font-weight: bold;
+    border-radius: 0.5rem 0.5rem 0 0;
 }
 
-.modal-show{
-    display: block;
+
+.modal__title{
+    font-size: 1.5rem;
 }
-/* 
-.modal__close {
-    display: none;
-} */
+
+.modal__paragraph{
+    font-size: 1.5rem;
+    color:#022c22;
+    margin-left: 1rem;
+}
+
+
+
+
 
 /* Footer */
 footer {
     display: flex;
     flex-direction: column;
     flex-wrap: nowrap;
+    list-style: none;
+    font-weight: bold;
+
 }
 footer div {
     flex-direction: row;
@@ -277,6 +302,7 @@ footer div>div {
 }
 footer div>.row {
     flex-direction: row;
+    gap: 3rem;
 }
 
 footer div>.row>div {
@@ -286,7 +312,6 @@ footer div>.row>div {
 .footer_top {
     box-sizing: border-box;
 }
-
 .slider{
     display: block;
 }

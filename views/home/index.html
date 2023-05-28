@@ -13,37 +13,38 @@
 <body>
     <header>
     </header>
-      <nav class="nav">
-        <ul class="nav__list">
-          <li class="nav__listlogo">
-            <img class="nav_logo_img" src="img/hella-sin-fondo.png" alt="Hella Store">
-          </li>
-          <li class="nav__listitem">Hombres
-            <ul class="nav__listitemdrop bg-emerald-200">
-                <li><a href="#" class="menu-link">Camisetas y franelas</a></li>
-                <li><a href="#" class="menu-link">Camisas</a></li>
-                <li><a href="#" class="menu-link">Suéteres & sudaderas</a></li>
-                <li><a href="#" class="menu-link">Shorts</a></li>
-                <li><a href="#" class="menu-link">Pantalones</a></li>
-                <li><a href="#" class="menu-link">Monos</a></li>
-                <li><a href="#" class="menu-link">Ropa íntima</a></li>
-            </ul>
-          </li>
-          <li class="nav__listitem"> Mujeres
-            <ul class="nav__listitemdrop bg-emerald-200">
-                <li><a href="#" class="menu-link">Camisetas y franelas</a></li>
-                <li><a href="#" class="menu-link">Blusas y tops</a></li>
-                <li><a href="#" class="menu-link">Suéteres & sudaderas</a></li>
-                <li><a href="#" class="menu-link">Shorts</a></li>
-                <li><a href="#" class="menu-link">Pantalones</a></li>
-                <li><a href="#" class="menu-link">Leggins & monos</a></li>
-                <li><a href="#" class="menu-link">Vestidos & faldas</a></li>
-                <li><a href="#" class="menu-link">Ropa íntima</a></li>
-            </ul>
-          </li>
-          <li class="nav__listitem">Niños y Niñas
-            <ul class="nav__listitemdrop bg-emerald-200">
-                <li><a href="#" class="nav__listitemdroplist menu-link">Niños</a>
+    <nav class="nav">
+    <ul class="nav__list">
+        <li class="nav__listlogo">
+        <img class="nav_logo_img" src="img/hella-sin-fondo.png" alt="Hella Store">
+        </li>
+        <li class="nav__listitem">Hombres
+        <ul class="nav__listitemdrop bg-emerald-300">
+            <li><a href="#" class="menu-link">Camisetas y franelas</a></li>
+            <li><a href="#" class="menu-link">Camisas</a></li>
+            <li><a href="#" class="menu-link">Suéteres & sudaderas</a></li>
+            <li><a href="#" class="menu-link">Shorts</a></li>
+            <li><a href="#" class="menu-link">Pantalones</a></li>
+            <li><a href="#" class="menu-link">Monos</a></li>
+            <li><a href="#" class="menu-link">Ropa íntima</a></li>
+        </ul>
+        </li>
+        <li class="nav__listitem"> Mujeres
+        <ul class="nav__listitemdrop bg-emerald-300">
+            <li><a href="#" class="menu-link">Camisetas y franelas</a></li>
+            <li><a href="#" class="menu-link">Blusas y tops</a></li>
+            <li><a href="#" class="menu-link">Suéteres & sudaderas</a></li>
+            <li><a href="#" class="menu-link">Shorts</a></li>
+            <li><a href="#" class="menu-link">Pantalones</a></li>
+            <li><a href="#" class="menu-link">Leggins & monos</a></li>
+            <li><a href="#" class="menu-link">Vestidos & faldas</a></li>
+            <li><a href="#" class="menu-link">Ropa íntima</a></li>
+        </ul>
+        </li>
+        <li class="nav__listitem">Niños y Niñas
+            <ul class="nav__listitemdrop ninos bg-emerald-300">
+                <li class="nav__listitemdroplist">
+                    <a href="#" class=" menu-link">Niños</a>
                     <ul class="nav__listitemdroplistsub">
                         <li><a href="#" class="menu-link">Camisetas y franelas</a></li>
                         <li><a href="#" class="menu-link">Camisas</a></li>
@@ -54,8 +55,9 @@
                         <li><a href="#" class="menu-link">Ropa íntima</a></li>
                     </ul>
                 </li>
-                <li><a href="#" class="menu-link">Niñas</a>
-                    <ul class="nav__listitemdroplistsub">
+                <li class="nav__listitemdroplist">
+                    <a href="#" class="menu-link">Niñas</a>
+                    <ul class="nav__listitemdroplistsub ninos bg-emerald-300">
                         <li><a href="#" class="menu-link">Camisetas y franelas</a></li>
                         <li><a href="#" class="menu-link">Blusas y tops</a></li>
                         <li><a href="#" class="menu-link">Suéteres & sudaderas</a></li>
@@ -67,78 +69,76 @@
                     </ul>
                 </li>
             </ul>
-          </li>
-        </ul>
-
-        <form action="/" method="GET" class="hidden md:flex flex-row mr-6">
-            <input type="text" id="buscador" name="buscador" class="barra-busqueda " placeholder="Buscar">
-            <button type="submit" class="boton-busqueda">
-                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
-                 stroke="#9ca3af" class="w-6 h-6">
-                 <path stroke-linecap="round" stroke-linejoin="round" d="M21 21l-5.197-5.197m0 0A7.5 7.5 0 105.196 5.196a7.5 7.5 0 0010.607 10.607z" />
-                </svg>         
-            </button>
-        </form>
+        </li>
+    </ul>
+    <form action="/" method="GET" class="hidden md:flex flex-row mr-6">
+        <input type="text" id="buscador" name="buscador" class="barra-busqueda " placeholder="Buscar">
+        <button type="submit" class="boton-busqueda">
+            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+                stroke="#9ca3af" class="w-6 h-6">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M21 21l-5.197-5.197m0 0A7.5 7.5 0 105.196 5.196a7.5 7.5 0 0010.607 10.607z" />
+            </svg>         
+        </button>
+    </form>
+    <div class="hidden md:flex  flex-row gap-4 flex cursor-pointer">
         
-
-        <div class="hidden md:flex flex-row gap-4 cursor-pointer">
-            
-            <a href="#" class="abrir-modal">
-                <svg xmlns="http://www.w3.org/2000/svg" class="items-center" width="24" height="24" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="#064e3b" class="w-6 h-6">
-                    <path stroke-linecap="round" stroke-linejoin="round" d="M15.75 6a3.75 3.75 0 11-7.5 0 3.75 3.75 0 017.5 0zM4.501 20.118a7.5 7.5 0 0114.998 0A17.933 17.933 0 0112 21.75c-2.676 0-5.216-.584-7.499-1.632z" />
-                </svg>
-            </a>
-            
-            
+        <a href="#" class="abrir-modal">
             <svg xmlns="http://www.w3.org/2000/svg" class="items-center" width="24" height="24" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="#064e3b" class="w-6 h-6">
-                <path stroke-linecap="round" stroke-linejoin="round" d="M12 3v2.25m6.364.386l-1.591 1.591M21 12h-2.25m-.386 6.364l-1.591-1.591M12 18.75V21m-4.773-4.227l-1.591 1.591M5.25 12H3m4.227-4.773L5.636 5.636M15.75 12a3.75 3.75 0 11-7.5 0 3.75 3.75 0 017.5 0z" />
+                <path stroke-linecap="round" stroke-linejoin="round" d="M15.75 6a3.75 3.75 0 11-7.5 0 3.75 3.75 0 017.5 0zM4.501 20.118a7.5 7.5 0 0114.998 0A17.933 17.933 0 0112 21.75c-2.676 0-5.216-.584-7.499-1.632z" />
             </svg>
-            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" stroke-width="1.5" stroke="#064e3b" fill="none" stroke-linecap="round" stroke-linejoin="round">
-                <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
-                <path d="M3 7v-2h13v2" />
-                <path d="M10 5v14" />
-                <path d="M12 19h-4" />
-                <path d="M15 13v-1h6v1" />
-                <path d="M18 12v7" />
-                <path d="M17 19h2" />
-            </svg>
-        </div>
-
-        <div class="flex ">
-            <svg xmlns="http://www.w3.org/2000/svg" class="shopping-cart" width="24" height="24" viewBox="0 0 24 24" stroke-width="1.5" stroke="#064e3b" fill="none" stroke-linecap="round" stroke-linejoin="round">
-                <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
-                <path d="M6 19m-2 0a2 2 0 1 0 4 0a2 2 0 1 0 -4 0" />
-                <path d="M17 19m-2 0a2 2 0 1 0 4 0a2 2 0 1 0 -4 0" />
-                <path d="M17 17h-11v-14h-2" />
-                <path d="M6 5l14 1l-1 7h-13" />
-            </svg>
-        </div>
-      </nav>
-
+        </a>
+        
+        
+        <svg xmlns="http://www.w3.org/2000/svg" class="items-center" width="24" height="24" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="#064e3b" class="w-6 h-6">
+            <path stroke-linecap="round" stroke-linejoin="round" d="M12 3v2.25m6.364.386l-1.591 1.591M21 12h-2.25m-.386 6.364l-1.591-1.591M12 18.75V21m-4.773-4.227l-1.591 1.591M5.25 12H3m4.227-4.773L5.636 5.636M15.75 12a3.75 3.75 0 11-7.5 0 3.75 3.75 0 017.5 0z" />
+        </svg>
+        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" stroke-width="1.5" stroke="#064e3b" fill="none" stroke-linecap="round" stroke-linejoin="round">
+            <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+            <path d="M3 7v-2h13v2" />
+            <path d="M10 5v14" />
+            <path d="M12 19h-4" />
+            <path d="M15 13v-1h6v1" />
+            <path d="M18 12v7" />
+            <path d="M17 19h2" />
+        </svg>
+    </div>
+    <div class="flex ">
+        <svg xmlns="http://www.w3.org/2000/svg" class="shopping-cart" width="24" height="24" viewBox="0 0 24 24" stroke-width="1.5" stroke="#064e3b" fill="none" stroke-linecap="round" stroke-linejoin="round">
+            <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+            <path d="M6 19m-2 0a2 2 0 1 0 4 0a2 2 0 1 0 -4 0" />
+            <path d="M17 19m-2 0a2 2 0 1 0 4 0a2 2 0 1 0 -4 0" />
+            <path d="M17 17h-11v-14h-2" />
+            <path d="M6 5l14 1l-1 7h-13" />
+        </svg>
+    </div>
+    </nav>
     <section class="slider">
         <img src="../../img/slider-about.jpg" alt="Slider">
         <h3>ABOUT US</h3>
     </section>
-    <section class="modal">
+
+    <!--Modal-->
+    <dialog class="max-md:hidden modal" id="modal">
         <div class="modal__contenedor">
-            <header class="flex items-center justify-between">
-                <h2>¡Bienvenido a Hella Store!</h2>
-                <a href="#" class="cursor-pointer modal__close">X</a>
+            <header class="flex items-center justify-between rounded-t-lg pl-4 pr-4">
+                <h2 class="modal__title">¡Bienvenido a Hella Store!</h2>
+                
+                <a href="#" class="cursor-pointer modal__close" id="cerrar" style="margin-right: 0.4rem;">
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="#fff" class="w-6 h-6">
+                        <path stroke-linecap="round" stroke-linejoin="round" d="M6 18L18 6M6 6l12 12" />
+                    </svg>     
+                </a>
             </header>
+            <p class="modal__paragraph">Si quieres comprar nuestros productos, por favor ingresa a tu cuenta o registrate, es simple y rápido.</p>
             
-            <div class="flex gap-4 w-8/12 h-5/6">
-                <div class="justify-center text-justify">
-                    <p>Si quieres comprar nuestros productos, por favor ingresa a tu cuenta o registrate, es simple y rápido.</p>
-                </div>
-                <div class="mt-48 ml-48 justify-center text-center">
-                    <a href="/login/" class="bg-emerald-400 text-white font-bold hover:bg-emerald-700 py-2 px-4 rounded-lg transition ease-in-out">Ingresar</a>
-                </div>
-                <div class="mt-48 justify-center text-center">
-                    <a href="/registro/" class="bg-white text-black font-bold hover:bg-emerald-700 py-2 px-4 rounded-lg transition ease-in-out">Registro</a>
-                </div>
+            <div class="flex justify-center h-12 gap-4">
+                <a href="/login/" class="bg-emerald-400 text-white font-bold hover:bg-emerald-700 py-2 px-4 rounded-lg transition ease-in-out text-center text-lg ml-80">Ingresar</a>
+            <a href="/registro/" class="bg-white text-black font-bold hover:bg-emerald-700 py-2 px-4 rounded-lg transition ease-in-out text-center text-lg">Registro</a>
             </div>
+            
         </div>
-    </section>
+    </dialog>
+
     <footer class="bg-emerald-400">
         <div class="footer_top bg-emerald-400">
             <div class="col-md-4">
@@ -149,8 +149,7 @@
                 <a href="#"><p><i class="fa fa-circle" aria-hidden="true"></i>Best sellers</p></a>
                 <a href="#"><p><i class="fa fa-circle" aria-hidden="true"></i>Best sellers</p></a>
             </div>
-            <div class="footer_overlay"></div>
-            <div class="col-md-4 center">
+            <div class="col-md-4 ">
                 <h2>INFORMATION</h2>
                 <a href="#"><p><i class="fa fa-circle" aria-hidden="true"></i>Best sellers</p></a>
                 <a href="#"><p><i class="fa fa-circle" aria-hidden="true"></i>Best sellers</p></a>
@@ -158,7 +157,6 @@
                 <a href="#"><p><i class="fa fa-circle" aria-hidden="true"></i>Best sellers</p></a>
                 <a href="#"><p><i class="fa fa-circle" aria-hidden="true"></i>Best sellers</p></a>
             </div>
-            <div class="footer_overlay"></div>
             <div class="col-md-4">
                 <div class="footer-contact">
                     <h2>CONTACT US</h2>
@@ -197,7 +195,7 @@
             </div>
         </div>
     </footer> 
-    <script href="../../src/styles.js"></script>
+    <script type="text/javascript" src="../../src/styles.js"></script>
 </body>
 <footer class="md:hidden">
     <nav id="navegacion" class="left-0 bottom-0 right-0 fixed h-16 bg-emerald-400">   
@@ -231,5 +229,4 @@
         </div>
     </nav>
 </footer>
-
 </html>

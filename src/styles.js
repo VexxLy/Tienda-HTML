@@ -1,7 +1,11 @@
-const openModal = document.getElementsByClassName('modal');
+const openModal = document.querySelector('#abrir');
+const closeModal = document.querySelector('#cerrar');
+const modal = document.querySelector('#modal');
 
-openModal.addEventListener('click',(e)=>{
-    e.preventDefault();
-   
-    openModal.classList.toggle("modal-show", undefined);
-})
+openModal.addEventListener('click', () => {
+    modal.setAttribute('open', '');
+});
+
+closeModal.addEventListener('click', () => {
+    modal.removeAttribute('open');
+});
