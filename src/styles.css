@@ -54,13 +54,14 @@ body {
     fill: #047857;
 }
 .nav__listitem {
+    font-size: 1vw;
     list-style: none;
     font-weight: bold;
     position: relative;
     padding: 1.5rem 1rem;
     cursor: pointer;
 }
-.nav__listitem::after {
+.nav__listitem::after, .nav__listitemdroplist::after, .nav__listitemdroplistsub>li::after{
     content: "";
     width: 0;
     height: 0.3rem;
@@ -80,7 +81,6 @@ body {
     height: auto;
     width: 12rem;
     transition: opacity 200ms ease-in;
-   
 }
 .nav__listitem:hover>ul.ninos, .nav__listitem:focus>ul.ninos, .nav__listitem:hover>ul.ninos li, .nav__listitem:focus>ul.ninos li {
     opacity: 1;
@@ -88,12 +88,11 @@ body {
     height: auto;
     width: auto;
     transition: opacity 200ms ease-in;
-   
 }
 .nav__listitemdrop {
     position: absolute;
-    top: 4rem;
-    left: 0rem;
+    top: 100%;
+    left: 0%;
     box-shadow: 0 0 0.5rem #000000;
     background-color: #34d399;
     border-radius: 0.2rem;
@@ -121,19 +120,21 @@ body {
 .nav__listitemdrop li:hover, .nav__listitemdrop li:focus {
     background-color: #047857;
 }
+
 .nav__listitemdroplist:hover>ul, .nav__listitemdroplist:focus>ul, .nav__listitemdroplist:hover li, .nav__listitemdroplist:focus li {
     opacity: 1;
     visibility: visible;
     height: auto;
-    width: auto;
+    width: 12rem;
     transition: opacity 200ms ease-in-out;
 }
+
 .nav__listitemdroplistsub {
     position: absolute;
-    top: 0rem;
-    left: 5.2rem;
+    top: 0%;
+    left: 100%;
     box-shadow: 0 0 0.5rem #000000;
-    background-color: rgb(102, 255, 135);
+    background-color:#34d399;
     border-radius: 0.2rem;
     height: 0;
     width: 0rem;
@@ -147,7 +148,6 @@ body {
 }
 .nav__listitemdroplistsub li {
     list-style: none;
-    padding: 0.5rem 1rem;
     border-radius: 0.2rem;
     transition: background-color 200ms ease-in-out;
     height: 0;
@@ -159,7 +159,7 @@ body {
 .menu-link {
     display: block;
     padding: 1rem;
-    font-size: 1.2em;
+    font-size: 1vw;
     text-decoration: none;
     background-color: #34d399;
     flex-grow: 1;
@@ -215,10 +215,9 @@ form{
 /*Modal*/
 
 .modal{
-    width:100vw;
-    height:100vh; 
+    width:99.99vw;
+    height:99.99vh; 
     position: fixed;
-    padding-top: 50vh;
     top:0;
     left:0;
     background: rgba(0,0,0,0.5);
@@ -276,7 +275,6 @@ form{
     color:#022c22;
     margin-left: 1rem;
 }
-
 
 
 
